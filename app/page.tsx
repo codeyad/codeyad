@@ -8,6 +8,7 @@ export default function Home() {
 	return (
 		<main className='bg-darkPurple w-full min-h-screen text-white '>
 			<Profile />
+			{/* @ts-expect-error Server Component */}
 			<Experience />
 			<Stack />
 			<Portfolio />
