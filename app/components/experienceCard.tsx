@@ -6,13 +6,13 @@ interface props {
 	description: string[]
 }
 
-export default function ExperienceCard({
+const ExperienceCard = ({
 	position,
 	company,
 	startDate,
 	endDate,
 	description,
-}: props) {
+}: props) => {
 	return (
 		<div className='relative bg-slate-100  dark:bg-eerieBlack z-10 flex justify-center items-center w-full md:w-1/2 m-auto border border-purple-500 rounded-2xl p-4'>
 			<div className='w-1/3'>
@@ -102,3 +102,5 @@ export default function ExperienceCard({
 		</div>
 	)
 }
+
+export default ExperienceCard

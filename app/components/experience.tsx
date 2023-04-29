@@ -17,7 +17,7 @@ const getExperience = async (): Promise<Experience[]> => {
 }
 const experiences = getExperience()
 
-export default async function Experience() {
+const Experience = async () => {
 	return (
 		<section id='experience' className={`relative ${preahvihear.className}`}>
 			<div className='flex flex-col py-28 justify-center items-center text-center space-y-20'>
@@ -40,3 +40,5 @@ export default async function Experience() {
 		</section>
 	)
 }
+
+export default Experience
