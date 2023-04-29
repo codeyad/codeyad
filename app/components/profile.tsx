@@ -7,7 +7,7 @@ const preahvihear = Preahvihear({
 	weight: '400',
 })
 
-export default function Profile() {
+const Profile = () => {
 	return (
 		<section id='profile' className={`${preahvihear.className} pb-28 pt-16`}>
 			<div className='flex flex-col justify-center items-center space-y-4 px-4 py-40 md:flex-row md:space-y-0 md:space-x-8'>
@@ -125,3 +125,5 @@ export default function Profile() {
 		</section>
 	)
 }
+
+export default Profile

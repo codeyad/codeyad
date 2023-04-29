@@ -27,7 +27,7 @@ const contactList: { img: StaticImageData; alt: string; href: string }[] = [
 	},
 ]
 
-export default function Contact() {
+const Contact = () => {
 	return (
 		<section id='contact' className={`${preahvihear.className}`}>
 			<div className='flex flex-col justify-center items-center text-center max-w-7xl py-28 m-auto space-y-10'>
@@ -58,3 +58,5 @@ export default function Contact() {
 		</section>
 	)
 }
+
+export default Contact

@@ -11,7 +11,7 @@ const preahvihear = Preahvihear({
 	weight: '400',
 })
 
-export default function Portfolio() {
+const Portfolio = () => {
 	return (
 		<section id='portfolio' className={`${preahvihear.className}`}>
 			<div className='flex flex-col justify-center items-center text-center max-w-7xl py-28 m-auto space-y-10'>
@@ -27,3 +27,5 @@ export default function Portfolio() {
 		</section>
 	)
 }
+
+export default Portfolio

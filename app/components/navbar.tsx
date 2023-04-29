@@ -6,7 +6,7 @@ interface Props {
 	onOpenModal: (isOpened: boolean) => void
 }
 
-export default function NavBar({ onOpenModal }: Props) {
+const NavBar = ({ onOpenModal }: Props) => {
 	const [menuIsOpened, setMenuIsOpened] = useState(false)
 
 	const linkitems = [
@@ -83,3 +83,5 @@ export default function NavBar({ onOpenModal }: Props) {
 		</nav>
 	)
 }
+
+export default NavBar

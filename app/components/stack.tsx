@@ -59,7 +59,7 @@ const stackList: { img: StaticImageData; alt: string }[] = [
 	},
 ]
 
-export default function Stack() {
+const Stack = () => {
 	return (
 		<section id='stack' className={`${preahvihear.className}`}>
 			<div className='flex flex-col justify-center items-center text-center max-w-7xl py-28 m-auto space-y-10'>
@@ -84,3 +84,5 @@ export default function Stack() {
 		</section>
 	)
 }
+
+export default Stack
