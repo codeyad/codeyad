@@ -7,7 +7,9 @@ const preahvihear = Preahvihear({
 })
 
 const dev = process.env.NODE_ENV !== 'production'
-const server = dev ? 'http://localhost:3000' : 'https://github.com/codeyad'
+const server = dev
+	? 'http://localhost:3000'
+	: 'https://codeyad.github.io/codeyad'
 const getExperience = async (): Promise<Experience[]> => {
 	const response = await fetch(`${server}/api/experience`)
 	const data = await response.json()
