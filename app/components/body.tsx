@@ -8,7 +8,7 @@ const preahvihear = Preahvihear({
 	weight: '400',
 })
 
-export default function Body({ children }: { children: ReactNode }) {
+const Body = ({ children }: { children: ReactNode }) => {
 	const [modalIsOpened, setModalIsOpened] = useState(false)
 	return (
 		<body
@@ -21,3 +21,5 @@ export default function Body({ children }: { children: ReactNode }) {
 		</body>
 	)
 }
+
+export default Body
