@@ -1,6 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { Audiowide } from 'next/font/google'
+const audioWide = Audiowide({
+	subsets: ['latin'],
+	weight: '400',
+})
 
 interface Props {
 	onOpenModal: (isOpened: boolean) => void
@@ -50,11 +55,14 @@ const NavBar = ({ onOpenModal }: Props) => {
 
 	return (
 		<nav className='z-20 w-full flex justify-between items-center px-10 bg-eerieBlack sticky top-0 shadow-2xl shadow-purple-800'>
-			<div className='w-1/2 md:flex justify-start items-center spacing-x-4 py-3 font-bold p-0 text-black'>
-				<div className='flex justify-center items-center bg-white rounded-full h-20 w-20 text-6xl overflow-hidden'>
-					<a href='/' className=''>
+			<div className='w-1/2 md:flex justify-start items-center spacing-x-4 py-3 font-bold p-0 text-white'>
+				<div
+					className={`flex flex-col justify-center items-center border-white border-2 bg-purple-500 rounded-full h-16 w-16  overflow-hidden ${audioWide.className}`}
+				>
+					<a href='/' className='text-3xl'>
 						CY
 					</a>
+					<p className='text-[10px]'>CodeYad</p>
 				</div>
 			</div>
 
