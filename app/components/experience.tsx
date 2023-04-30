@@ -29,7 +29,7 @@ const Experience = async () => {
 						<>
 							<ExperienceCard key={experience.id} {...experience} />
 							{i + 1 !== arr.length ? (
-								<div className='w-10 h-24   m-auto bg-purple-500 dark:bg-gradient-to-b from-purple-950 to to-purple-500 '></div>
+								<div className='w-10 h-24 m-auto bg-gradient-to-b from-purple-950 to to-purple-500 '></div>
 							) : (
 								''
 							)}

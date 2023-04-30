@@ -14,7 +14,7 @@ const ExperienceCard = ({
 	description,
 }: props) => {
 	return (
-		<div className='relative bg-slate-100  dark:bg-eerieBlack z-10 flex justify-center items-center w-full md:w-1/2 m-auto border border-purple-500 rounded-2xl p-4'>
+		<div className='relative bg-eerieBlack z-10 flex justify-center items-center w-full md:w-1/2 m-auto border border-purple-500 rounded-2xl p-4'>
 			<div className='w-1/3'>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
