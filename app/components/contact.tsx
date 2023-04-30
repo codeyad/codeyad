@@ -2,9 +2,9 @@ import github from '../../public/images/github.png'
 import linkedin from '../../public/images/linkedin.png'
 import gmail from '../../public/images/gmail.png'
 import Image, { StaticImageData } from 'next/image'
-import { Preahvihear } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 
-const preahvihear = Preahvihear({
+const plusJakarta = Plus_Jakarta_Sans({
 	subsets: ['latin'],
 	weight: '400',
 })
@@ -29,7 +29,7 @@ const contactList: { img: StaticImageData; alt: string; href: string }[] = [
 
 const Contact = () => {
 	return (
-		<section id='contact' className={`${preahvihear.className}`}>
+		<section id='contact' className={`${plusJakarta.className}`}>
 			<div className='flex flex-col justify-center items-center text-center max-w-7xl py-28 m-auto space-y-10'>
 				<h1 className='text-5xl md:text-6xl font-bold w-full'>Contact Me</h1>
 

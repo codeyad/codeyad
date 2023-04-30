@@ -1,7 +1,7 @@
-import { Preahvihear } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import ExperienceCard from './experienceCard'
 import { Experience as InterfaceExperience } from '../interfaces'
-const preahvihear = Preahvihear({
+const plusJakarta = Plus_Jakarta_Sans({
 	subsets: ['latin'],
 	weight: '400',
 })
@@ -19,9 +19,9 @@ const experiences = getExperience()
 
 const Experience = async () => {
 	return (
-		<section id='experience' className={`relative ${preahvihear.className}`}>
-			<div className='flex flex-col py-28 justify-center items-center text-center space-y-20'>
-				<h1 className='text-5xl md:text-6xl font-bold w-full]'>
+		<section id='experience' className={`relative ${plusJakarta.className}`}>
+			<div className='flex flex-col py-28 justify-center items-center text-center space-y-20 px-4'>
+				<h1 className='text-5xl md:text-6xl font-bold w-full'>
 					Work Experience
 				</h1>
 				<div>

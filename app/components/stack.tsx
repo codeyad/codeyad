@@ -9,9 +9,9 @@ import jest from '../../public/images/jest.png'
 import sass from '../../public/images/sass.png'
 import git from '../../public/images/git.png'
 import Image, { StaticImageData } from 'next/image'
-import { Preahvihear } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 
-const preahvihear = Preahvihear({
+const plusJakarta = Plus_Jakarta_Sans({
 	subsets: ['latin'],
 	weight: '400',
 })
@@ -61,7 +61,7 @@ const stackList: { img: StaticImageData; alt: string }[] = [
 
 const Stack = () => {
 	return (
-		<section id='stack' className={`${preahvihear.className}`}>
+		<section id='stack' className={`${plusJakarta.className}`}>
 			<div className='flex flex-col justify-center items-center text-center max-w-7xl py-28 m-auto space-y-10'>
 				<h1 className='text-5xl md:text-6xl font-bold w-full'>Tech Stack</h1>
 

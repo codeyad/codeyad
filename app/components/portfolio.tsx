@@ -4,16 +4,16 @@ import js from '../../public/images/js.png'
 import react from '../../public/images/react.png'
 import next from '../../public/images/nexjs.png'
 
-import { Preahvihear } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 
-const preahvihear = Preahvihear({
+const plusJakarta = Plus_Jakarta_Sans({
 	subsets: ['latin'],
 	weight: '400',
 })
 
 const Portfolio = () => {
 	return (
-		<section id='portfolio' className={`${preahvihear.className}`}>
+		<section id='portfolio' className={`${plusJakarta.className}`}>
 			<div className='flex flex-col justify-center items-center text-center max-w-7xl py-28 m-auto space-y-10'>
 				<h1 className='text-5xl md:text-6xl font-bold w-full'>Portfolio</h1>
 

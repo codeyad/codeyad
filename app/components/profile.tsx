@@ -1,24 +1,24 @@
 import Image from 'next/image'
-import profileImage from '../../public/images/profile.jpg'
+import profileImage from '../../public/images/profile.png'
 import arrowImage from '../../public/images/Arrow.png'
-import { Preahvihear } from 'next/font/google'
-const preahvihear = Preahvihear({
+import { Plus_Jakarta_Sans } from 'next/font/google'
+const plusJakarta = Plus_Jakarta_Sans({
 	subsets: ['latin'],
 	weight: '400',
 })
 
 const Profile = () => {
 	return (
-		<section id='profile' className={`${preahvihear.className} pb-28 pt-16`}>
+		<section id='profile' className={`${plusJakarta.className} pb-28 pt-16`}>
 			<div className='flex flex-col justify-center items-center space-y-4 px-4 py-40 md:flex-row md:space-y-0 md:space-x-8'>
-				<div className='relative flex justify-center items-center w-96 h-96 bg-gradient-radial from-purple-500 from-10%  via-purple-700 via-20% to-darkPurple  to-70% '>
+				<div className='relative flex justify-center items-center w-80 h-80 md:w-96 md:h-96 bg-gradient-radial from-purple-500 from-10%  via-purple-700 via-20% to-darkPurple  to-70% '>
 					<Image
 						src={profileImage}
 						alt=''
 						className='rounded-full object-cover w-2/3 h-2/3 '
 					/>
 
-					<div className='absolute -top-16 left-64 md:-top-10  md:left-72 flex flex-row-reverse justify-center items-start w-20 md:w-96 h-12'>
+					<div className='absolute -top-16 left-56 md:-top-10  md:left-72 flex flex-row-reverse justify-center items-start w-20 md:w-96 h-12'>
 						<Image
 							className='absolute top-10 -left-14 md:top-0 md:left-0'
 							src={arrowImage}
