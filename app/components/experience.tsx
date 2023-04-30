@@ -13,7 +13,7 @@ const server = dev
 const getExperience = async (): Promise<Experience[]> => {
 	const response = await fetch(`${server}/api/experience`)
 	const data = await response.json()
-	return data
+	return data.experiences
 }
 const experiences = getExperience()
 
