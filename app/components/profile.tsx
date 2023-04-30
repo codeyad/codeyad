@@ -115,10 +115,10 @@ const Profile = () => {
 
 				<div className='text-center space-y-4 md:text-left'>
 					<p className='text-lg leading-5 font-thin tracking-wide px-8 md:px-0 w-full'>
-						I'm currently working at Front-End developer with 9 years of
-						experience, very proficient in javascript and with experience in
-						frameworks/libraries like React, Angular and Vuejs. Counting also
-						with experience working in Back-End with techs like NodeJS and PHP.
+						I'm a Front-End developer with 9+ years of experience, very
+						proficient in javascript and with experience in frameworks/libraries
+						like React, Angular and Vuejs. Counting also with experience working
+						in Back-End with techs like NodeJS and PHP.
 					</p>
 				</div>
 			</div>
