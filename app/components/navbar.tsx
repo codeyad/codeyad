@@ -53,13 +53,15 @@ const NavBar = ({ onOpenModal }: Props) => {
 		onOpenModal(!menuIsOpened)
 	}
 
+	const url = process.env.NODE_ENV === 'development' ? '/' : '/codeyad'
+
 	return (
 		<nav className='z-20 w-full flex justify-between items-center px-10 bg-eerieBlack sticky top-0 shadow-2xl shadow-purple-800'>
 			<div className='w-1/2 md:flex justify-start items-center spacing-x-4 py-3 font-bold p-0 text-white'>
 				<div
 					className={`flex flex-col justify-center items-center border-white border-2 bg-purple-500 rounded-full h-16 w-16  overflow-hidden ${audioWide.className}`}
 				>
-					<a href='/' className='text-3xl'>
+					<a href={url} className='text-3xl'>
 						CY
 					</a>
 					<p className='text-[10px]'>CodeYad</p>
