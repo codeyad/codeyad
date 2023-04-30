@@ -20,7 +20,7 @@ const experiences = getExperience()
 const Experience = async () => {
 	return (
 		<section id='experience' className={`relative ${preahvihear.className}`}>
-			{/* <div className='flex flex-col py-28 justify-center items-center text-center space-y-20'>
+			<div className='flex flex-col py-28 justify-center items-center text-center space-y-20'>
 				<h1 className='text-5xl md:text-6xl font-bold w-full]'>
 					Work Experience
 				</h1>
@@ -36,7 +36,7 @@ const Experience = async () => {
 						</>
 					))}
 				</div>
-			</div> */}
+			</div>
 		</section>
 	)
 }
