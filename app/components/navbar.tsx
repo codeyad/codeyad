@@ -76,7 +76,10 @@ const NavBar = ({ onOpenModal }: Props) => {
 					menuIsOpened ? '' : 'hidden'
 				} w-screen h-screen absolute top-0 left-0 bg-eerieBlack opacity-90 text-white font-bold text-md `}
 			>
-				<div className='flex flex-col justify-center items-center space-y-5 py-6 h-1/2'>
+				<div
+					className='flex flex-col justify-center items-center space-y-5 py-6 h-1/2'
+					onClick={handleMenu}
+				>
 					{linkList()}
 				</div>
 			</div>

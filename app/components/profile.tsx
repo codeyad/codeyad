@@ -18,13 +18,13 @@ const Profile = () => {
 						className='rounded-full object-cover w-2/3 h-2/3 '
 					/>
 
-					<div className='absolute -top-16 left-72 md:-top-10  md:left-72 flex flex-row-reverse justify-center items-start w-20 md:w-96 h-12'>
+					<div className='absolute -top-16 left-64 md:-top-10  md:left-72 flex flex-row-reverse justify-center items-start w-20 md:w-96 h-12'>
 						<Image
 							className='absolute top-10 -left-14 md:top-0 md:left-0'
 							src={arrowImage}
 							alt=''
 						/>
-						<p className=' text-center w-full  text-lg pl-3 md:pt-5  md:pl-10'>
+						<p className='text-center w-full text-lg pl-3 md:pt-5 md:pl-10'>
 							Hello!, I'm
 							<span className='text-purple-500 animate-pulse font-bold pl-2'>
 								Melvis Perez
