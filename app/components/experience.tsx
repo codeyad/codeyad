@@ -1,6 +1,6 @@
 import { Preahvihear } from 'next/font/google'
 // import ExperienceCard from './experienceCard'
-import { Experience } from '../interfaces'
+// import { Experience } from '../interfaces'
 const preahvihear = Preahvihear({
 	subsets: ['latin'],
 	weight: '400',
