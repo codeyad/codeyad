@@ -45,7 +45,9 @@ const Contact = () => {
 								}`}
 							>
 								<Image
-									className='cursor-pointer'
+									className={`cursor-pointer ${
+										contact.alt.includes('git') ? 'bg-white rounded-full' : ''
+									}`}
 									src={contact.img}
 									alt={contact.alt}
 								/>
