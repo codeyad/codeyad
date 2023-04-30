@@ -1,3 +1,5 @@
+const url = process.env.NODE_ENV === 'development' ? '' : '/codeyad'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	experimental: {
@@ -5,6 +7,8 @@ const nextConfig = {
 	},
 	output: 'export',
 	images: { unoptimized: true },
+	trailingSlash: false,
+	basePath: url,
 }
 
 module.exports = nextConfig
