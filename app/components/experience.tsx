@@ -1,21 +1,21 @@
 import { Preahvihear } from 'next/font/google'
-import ExperienceCard from './experienceCard'
+// import ExperienceCard from './experienceCard'
 import { Experience } from '../interfaces'
 const preahvihear = Preahvihear({
 	subsets: ['latin'],
 	weight: '400',
 })
 
-const dev = process.env.NODE_ENV !== 'production'
-const server = dev
-	? 'http://localhost:3000'
-	: 'https://codeyad.github.io/codeyad'
-const getExperience = async (): Promise<Experience[]> => {
-	const response = await fetch(`${server}/api/experience`)
-	const data = await response.json()
-	return data.experiences
-}
-const experiences = getExperience()
+// const dev = process.env.NODE_ENV !== 'production'
+// const server = dev
+// 	? 'http://localhost:3000'
+// 	: 'https://codeyad.github.io/codeyad'
+// const getExperience = async (): Promise<Experience[]> => {
+// 	const response = await fetch(`${server}/api/experience`)
+// 	const data = await response.json()
+// 	return data.experiences
+// }
+// const experiences = getExperience()
 
 const Experience = async () => {
 	return (
